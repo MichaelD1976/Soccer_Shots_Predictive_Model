@@ -1,2 +1,4 @@
 ### Soccer_Shots_Predictive_Model
-This analysis seeks to utilize a pre-processed dataset of ~19k European top flight soccer matches from the last 10 years from which a multiple linear regression model can be trained to predict the number of shots on target for future matches.
+This analysis seeks to utilize a pre-processed dataset of ~19k European top flight soccer match. Further transformation is carried out with the dataset split into separate seasonal dataframes and each teams 'running' shots-on-target (for and against) current seasonal averages incorporated at each match row. The reconfigured data is combined again and best correlated features are isolated and visualized before modelling is performed with train and test splits. Multiple linear regression is performed on varying combinations of the correlated features and polynomial relationships tested for better fit. R square and root mean square error metrics are used to measure best fit. 
+
+Finally best performing model and features are highlighted and intercept/coefficients shown for use in future match predictions.
